@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+
+<html>
+
+
+<head>
+    <title>Bigger Words function</title>
+
+    <script>
+        var string = "6lack";
+        var arrayOfWords = ["Kendrick", "Cole", "Guwop", "Nipsey", "JID", "Ab-Soul"];
+
+        function wordLengthCheck(stringParam, arrayParam) {
+            var finalizedArray = [];
+            var stringParameterLength = stringParam.length;
+            for (var i = 0; i < arrayParam.length; i++) {
+                var wordInQuestion = arrayParam[i];
+                if (wordInQuestion.length >= stringParameterLength) {
+                    finalizedArray.push(wordInQuestion);
+                }
+            }
+            
+            return finalizedArray;
+        }
+
+        console.log(wordLengthCheck(string, arrayOfWords));
+    </script>
+</head>
+
+
+<body>
+    
+</body>
+
+
+</html>
